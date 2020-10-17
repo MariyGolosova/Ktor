@@ -14,8 +14,11 @@ fun main(args: Array<String>) {
             get("/") {
                 call.respondFile(File("./pages/index.html"))
             }
-            get("demo") {
+            get("/demo") {
                 call.respondFile(File("./pages/1.html"))
+            }
+            get("/test") {
+                call.respondFile(File("./pages/2.html"))
             }
         }
     }
