@@ -8,7 +8,7 @@ import io.ktor.server.engine.embeddedServer
 import io.ktor.server.netty.Netty
 import java.io.File
 
-fun main(args: Array<String>) {
+fun main() {
     val server = embeddedServer(Netty, port = 9090) {
         routing {
             get("/") {
