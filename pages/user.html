@@ -1,0 +1,16 @@
+<!DOCTYPE html >
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>
+    <div>
+        <h2 th:text="'Hello ' + ${user.username} + '!'"></h2>
+        <p>Your password <span th:text="${user.password}"></span></p>
+        <a href="/question1">start test</a>
+    </div>
+</center>
+</body>
+</html>
